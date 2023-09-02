@@ -50,22 +50,8 @@ export default function Board() {
       </div> 
     </div>
   );
-
-  const winner = calculateWinner(squares);
-  let status;
-  if (winner) {
-    status = "Winner: " + winner;
-  } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
-  }
-
-  return (
-    <>
-      <div className="status">{status}</div>
-      <div className="board-row">
-        // ...
-  )
 }
+
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
